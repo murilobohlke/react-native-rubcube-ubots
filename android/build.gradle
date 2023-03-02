@@ -58,9 +58,7 @@ android {
 repositories {
   mavenCentral()
   google()
-  maven { url 'https://www.jitpack.io' }
 }
-
 
 dependencies {
   // For < 0.71, this will be from the local maven repo

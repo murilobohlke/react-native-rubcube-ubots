@@ -28,7 +28,7 @@ export function initialize(
   resource: string,
   port: number
 ): void {
-  return RubcubeUbots.openChat(ubotsJID, hostname, domain, resource, port);
+  return RubcubeUbots.initialize(ubotsJID, hostname, domain, resource, port);
 }
 
 export function openChat(botName: string): void {

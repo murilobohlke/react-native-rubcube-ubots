@@ -1,6 +1,7 @@
 package com.rubcubeubots;
 
 import androidx.annotation.NonNull;
+import android.content.Intent;
 
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
@@ -48,9 +49,9 @@ public class RubcubeUbotsModule extends ReactContextBaseJavaModule {
 
   @ReactMethod
   public void openChat(String botName) {
-    // Intent i = new Intent(getCurrentActivity(), ChatActivity.class);
-    // i.putExtra("title", botName);
-    // getCurrentActivity().startActivity(i);
+    Intent i = new Intent(getCurrentActivity(), ChatActivity.class);
+    i.putExtra("title", botName);
+    getCurrentActivity().startActivity(i);
   }
 
   @ReactMethod
